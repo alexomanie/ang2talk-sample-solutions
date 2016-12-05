@@ -15,8 +15,4 @@ export class TemperatureService {
     return this.http.get(`${this.baseAdress}/temperature`).map(response => {return response.json() as Temperature; });
   }
 
-  getTemperatureHistory(count: number): Observable<Temperature[]> {
-    return this.http.get(`${this.baseAdress}/temperatures/${count}`).map(r => r.json().values);
-  }
-
 }
