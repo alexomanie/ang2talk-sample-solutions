@@ -47,7 +47,7 @@ export class MeasurementChartComponent implements OnInit {
           labels.push(`${date.toLocaleTimeString('de-de')}`);
         });
         this.lineChartLabels = labels;
-        this.lineChartData = [{data: values, label: 'Temperaturhistorie'}];
+        this.lineChartData = [{data: values, label: 'vergangene Werte'}];
       });
   }
 
