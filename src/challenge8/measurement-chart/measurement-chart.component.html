@@ -1,0 +1,12 @@
+<div class="row">
+  <h4>History</h4>
+  <span><input type="range" min="1" max="50" [(ngModel)]="count" >{{count}}</span>
+  <button (click)="getHistory()">update</button>
+</div>
+<div>
+  <canvas baseChart
+                [datasets]="lineChartData"
+                [labels]="lineChartLabels"
+                [options]="lineChartOptions"
+                [chartType]="lineChartType"></canvas>
+</div>
