@@ -8,16 +8,16 @@
     <thead class="thead-inverse">
       <tr>
         <th>Datum</th>
-        <th>Temperatur</th>
+        <th>Wert</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let temp of temperatures" scope="row">
+      <tr *ngFor="let measurement of measurements" scope="row">
         <td>
-          {{temp.timestamp | date: 'dd.MM.yyyy - hh:mm:ss'}}
+          {{measurement.timestamp | date: 'dd.MM.yyyy - hh:mm:ss'}}
         </td>
         <td>
-          {{temp.value | number: '.1-1'}} °C
+          {{measurement.value | number: '.1-1'}}
         </td>
       </tr>
     </tbody>
